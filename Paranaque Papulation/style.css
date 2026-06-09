@@ -1,0 +1,1066 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ececec;
+    text-align:center;
+}
+
+/* ====================================
+MAIN
+==================================== */
+
+.main-container{
+    margin-top:20px;
+}
+
+/* ====================================
+HERO SECTION
+==================================== */
+
+.banner{
+
+    width:80%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    border:8px solid #008d1f;
+
+    border-radius:25px;
+
+    padding:40px 20px;
+
+    background:white;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+/* ====================================
+TITLE
+==================================== */
+
+.title{
+
+    color:#008d1f;
+
+    font-size:90px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+}
+
+/* ====================================
+LINES
+==================================== */
+
+.line-icons{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-top:30px;
+
+    gap:20px;
+}
+
+.line{
+
+    width:250px;
+
+    height:6px;
+
+    background:#008d1f;
+
+    border-radius:5px;
+}
+
+/* ====================================
+PEOPLE ICONS
+==================================== */
+
+.people-top,
+.people-bottom{
+
+    display:flex;
+
+    align-items:flex-end;
+
+    gap:10px;
+}
+
+.person{
+
+    background:#008d1f;
+
+    border-radius:50px 50px 10px 10px;
+
+    position:relative;
+}
+
+.person::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:30px;
+
+    height:30px;
+
+    background:#008d1f;
+
+    border-radius:50%;
+}
+
+.small{
+
+    width:40px;
+
+    height:60px;
+}
+
+.medium{
+
+    width:55px;
+
+    height:85px;
+}
+
+.big{
+
+    width:60px;
+
+    height:80px;
+}
+
+.large{
+
+    width:75px;
+
+    height:110px;
+}
+
+/* ====================================
+POPULATION BOX
+==================================== */
+
+.population-box{
+
+    margin:30px auto;
+
+    width:320px;
+
+    background:#008d1f;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    font-size:40px;
+
+    font-weight:bold;
+}
+
+.people-bottom{
+
+    justify-content:center;
+
+    margin-top:20px;
+}
+
+/* ====================================
+NAVIGATION
+==================================== */
+
+.nav-buttons{
+
+    margin-top:50px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+/* ====================================
+TAB BUTTONS
+==================================== */
+
+.tab-btn{
+
+    text-decoration:none;
+
+    background:#008d1f;
+
+    color:white;
+
+    padding:18px 30px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+
+    border-radius:10px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+
+    border:none;
+
+    cursor:pointer;
+}
+
+.tab-btn:hover{
+
+    background:#006f19;
+
+    transform:translateY(-3px);
+}
+
+.tab-btn.active{
+
+    background:#004d11;
+}
+
+/* ====================================
+TAB SYSTEM
+==================================== */
+
+.tab-content{
+
+    display:none;
+
+    width:100%;
+}
+
+.active-tab{
+
+    display:block;
+}
+
+/* ====================================
+SECTION TITLES
+==================================== */
+
+.section-title,
+.developer-title{
+
+    margin:50px auto 25px;
+
+    width:350px;
+
+    background:linear-gradient(
+        to bottom,
+        #166d07,
+        #39d313
+    );
+
+    color:white;
+
+    padding:15px;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    text-align:center;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* ====================================
+ABSTRACT
+==================================== */
+
+.abstract-box{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    background:linear-gradient(
+        to bottom,
+        #166d07,
+        #39d313
+    );
+
+    color:white;
+
+    padding:35px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    line-height:1.9;
+
+    text-align:justify;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* ====================================
+METHODOLOGY
+==================================== */
+
+.methodology-section{
+
+    width:95%;
+
+    margin:60px auto;
+}
+
+.methodology-title{
+
+    width:400px;
+
+    margin:0 auto 40px;
+
+    padding:18px;
+
+    background:linear-gradient(
+        to bottom,
+        #0b7a12,
+        #2fe10f
+    );
+
+    color:white;
+
+    font-size:38px;
+
+    font-weight:bold;
+
+    border-radius:15px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,0.2);
+}
+
+.methodology-container{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px,1fr));
+
+    gap:25px;
+}
+
+.method-card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:left;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.12);
+
+    transition:0.3s;
+}
+
+.method-card:hover{
+
+    transform:translateY(-8px);
+}
+
+.method-icon{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+}
+
+.method-card h2{
+
+    color:#008d1f;
+
+    margin-bottom:20px;
+
+    font-size:34px;
+}
+
+.method-card p{
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:#333;
+}
+
+/* ====================================
+GRAPH SECTION
+==================================== */
+
+.graph-section{
+
+    width:95%;
+
+    margin:60px auto;
+}
+
+.graph-container{
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.graph-container h2{
+
+    margin-bottom:30px;
+
+    color:#008d1f;
+
+    font-size:35px;
+}
+
+/* ====================================
+GRAPH LAYOUT
+==================================== */
+
+.graph-layout{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+}
+
+/* ====================================
+SOLVING BOX
+==================================== */
+
+.solve-box{
+
+    width:300px;
+
+    background:#008d1f;
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+    text-align:left;
+
+    line-height:1.8;
+}
+
+.solve-box h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+    font-size:28px;
+
+    color:#ffffff;
+}
+
+.solve-box p{
+
+    margin-bottom:15px;
+}
+
+.solve-box ul{
+
+    margin-left:20px;
+
+    margin-bottom:20px;
+}
+
+.solve-box li{
+
+    margin-bottom:10px;
+}
+
+/* ====================================
+FORMULA
+==================================== */
+
+.formula{
+
+    text-align:center;
+
+    font-size:32px;
+
+    font-weight:bold;
+
+    margin:20px 0;
+
+    color:yellow;
+}
+
+/* ====================================
+GRAPH CENTER
+==================================== */
+
+.graph-center{
+
+    flex:1;
+
+    min-width:600px;
+}
+
+/* ====================================
+GRAPH
+==================================== */
+
+#populationGraph{
+
+    width:100%;
+
+    height:700px;
+
+    margin:auto;
+
+    border-radius:20px;
+}
+
+/* ====================================
+LIVE DATA BOX
+==================================== */
+
+#liveDataBox{
+
+    margin-top:30px;
+
+    background:#008d1f;
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    font-size:24px;
+
+    width:350px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+
+    transition:0.3s;
+}
+
+#liveDataBox h2{
+
+    margin-bottom:15px;
+}
+
+/* ====================================
+BARANGGAYS
+==================================== */
+
+.barangays-container{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(200px,1fr));
+
+    gap:20px;
+}
+
+.barangay-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    color:#008d1f;
+
+    transition:0.3s;
+
+    border:none;
+
+    cursor:pointer;
+}
+
+.barangay-card:hover{
+
+    transform:translateY(-5px);
+
+    background:#008d1f;
+
+    color:white;
+}
+
+/* ====================================
+BARANGAY GRAPH SECTION
+==================================== */
+
+.barangay-graph-section{
+
+    width:95%;
+
+    margin:50px auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+#barangayGraph{
+
+    width:100%;
+
+    height:700px;
+}
+
+#barangayLiveData{
+
+    margin-top:30px;
+
+    background:#008d1f;
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    font-size:24px;
+
+    width:350px;
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* ====================================
+PLACES
+==================================== */
+
+.places-container{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.place-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.place-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.place-card h3{
+
+    color:#008d1f;
+
+    margin-bottom:15px;
+
+    font-size:28px;
+}
+
+.place-card p{
+
+    font-size:18px;
+
+    line-height:1.7;
+}
+
+/* ====================================
+DEVELOPERS
+==================================== */
+
+.developers-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:40px;
+}
+
+.developer-card{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:20px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.developer-card:hover{
+
+    transform:translateY(-5px);
+}
+
+.developer-card img{
+
+    width:250px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
+    border:5px solid #39d313;
+}
+
+.developer-name{
+
+    flex:1;
+
+    height:80px;
+
+    background:white;
+
+    border:2px solid gray;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:35px;
+
+    border-radius:10px;
+
+    font-weight:bold;
+}
+
+/* ====================================
+MAP
+==================================== */
+
+.map-container{
+
+    width:90%;
+
+    margin:40px auto;
+}
+
+/* ====================================
+RESPONSIVE
+==================================== */
+
+@media(max-width:1200px){
+
+    .graph-layout{
+
+        flex-direction:column;
+
+        align-items:center;
+    }
+
+    .graph-center{
+
+        min-width:100%;
+    }
+
+    .solve-box{
+
+        width:100%;
+    }
+}
+
+@media(max-width:900px){
+
+    .title{
+        font-size:50px;
+    }
+
+    .line{
+        width:100px;
+    }
+
+    .population-box{
+
+        width:240px;
+
+        font-size:28px;
+    }
+
+    .developers-container{
+
+        grid-template-columns:1fr;
+    }
+
+    .developer-card{
+
+        flex-direction:column;
+    }
+
+    .developer-name{
+
+        width:100%;
+
+        height:120px;
+
+        font-size:28px;
+    }
+
+    .developer-card img{
+
+        width:100%;
+
+        height:auto;
+    }
+
+    .abstract-box{
+
+        font-size:16px;
+    }
+
+    .tab-btn{
+
+        width:90%;
+    }
+
+    #populationGraph{
+
+        height:500px;
+    }
+
+    #barangayGraph{
+
+        height:500px;
+    }
+
+    #liveDataBox{
+
+        width:100%;
+
+        font-size:18px;
+    }
+
+    #barangayLiveData{
+
+        width:100%;
+
+        font-size:18px;
+    }
+
+    .solve-box{
+
+        width:100%;
+    }
+
+    .formula{
+
+        font-size:24px;
+    }
+
+
+    /* ====================================
+LAND FOR SALE CARD
+==================================== */
+
+.land-sale-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.land-sale-card:hover{
+
+    transform:translateY(-8px);
+
+    background:#008d1f;
+
+    color:white;
+}
+
+.land-icon{
+
+    font-size:80px;
+
+    margin-bottom:20px;
+}
+
+.land-sale-card h3{
+
+    color:#008d1f;
+
+    font-size:40px;
+
+    margin-bottom:20px;
+}
+
+.land-sale-card:hover h3{
+
+    color:white;
+}
+
+.land-sale-card p{
+
+    font-size:20px;
+
+    line-height:1.9;
+
+    margin-bottom:20px;
+}
+
+.visit-btn{
+
+    display:inline-block;
+
+    margin-top:20px;
+
+    background:#008d1f;
+
+    color:white;
+
+    padding:15px 30px;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+.land-sale-card:hover .visit-btn{
+
+    background:white;
+
+    color:#008d1f;
+}
+
+@media(max-width:900px){
+
+    .land-sale-card{
+
+        padding:25px;
+    }
+
+    .land-sale-card h3{
+
+        font-size:28px;
+    }
+
+    .land-sale-card p{
+
+        font-size:16px;
+    }
+
+    .land-icon{
+
+        font-size:60px;
+    }
+
+}
+}
+

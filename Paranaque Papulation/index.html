@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Parañaque Population Prediction
+    </title>
+
+    <!-- CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+    <!-- PLOTLY -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- MAIN -->
+    <div class="main-container">
+
+        <!-- HERO -->
+        <div class="banner">
+
+            <h1 class="title">
+                PARAÑAQUE
+            </h1>
+
+            <!-- TOP ICONS -->
+            <div class="line-icons">
+
+                <div class="line"></div>
+
+                <div class="people-top">
+
+                    <div class="person small"></div>
+
+                    <div class="person big"></div>
+
+                    <div class="person small"></div>
+
+                </div>
+
+                <div class="line"></div>
+
+            </div>
+
+            <!-- POPULATION -->
+            <div class="population-box">
+                POPULATION
+            </div>
+
+            <!-- PEOPLE -->
+            <div class="people-bottom">
+
+                <div class="person small"></div>
+                <div class="person small"></div>
+                <div class="person medium"></div>
+                <div class="person large"></div>
+                <div class="person medium"></div>
+                <div class="person small"></div>
+                <div class="person small"></div>
+
+            </div>
+
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav-buttons">
+
+            <button class="tab-btn active"
+                    onclick="showTab('home-tab', this)">
+
+                HOME
+
+            </button>
+
+            <button class="tab-btn"
+                    onclick="showTab('graph-tab', this)">
+
+                Graphs & Solving
+
+            </button>
+
+            <button class="tab-btn"
+                    onclick="showTab('barangay-tab', this)">
+
+                BARANGGAYS
+
+            </button>
+
+            <button class="tab-btn"
+                    onclick="showTab('places-tab', this)">
+
+                Places
+
+            </button>
+
+            <button class="tab-btn"
+                    onclick="showTab('maps-tab', this)">
+
+                Paranaque Maps Link
+
+            </button>
+
+        </div>
+
+        <!-- ==================================== -->
+        <!-- HOME TAB -->
+        <!-- ==================================== -->
+
+        <div id="home-tab"
+             class="tab-content active-tab">
+
+            <!-- ABSTRACT -->
+            <div class="section-title">
+                ABSTRACT
+            </div>
+
+            <div class="abstract-box">
+
+                <p>
+
+                    <strong>Abstract:</strong>
+
+                    This study presents a predictive modeling approach for urban population growth in Parañaque City using Linear Regression and Polynomial Curve Fitting based on the Least Squares Method.
+
+                    Historical population data from 1990 to 2024 were analyzed to evaluate model performance.
+
+                    Results indicate that Polynomial Regression better captures nonlinear growth trends compared to Linear Regression.
+
+                </p>
+
+            </div>
+
+            <!-- METHODOLOGY -->
+            <div class="methodology-section">
+
+                <div class="methodology-title">
+                    METHODOLOGY
+                </div>
+
+                <div class="methodology-container">
+
+                    <!-- CARD 1 -->
+                    <div class="method-card">
+
+                        <div class="method-icon">
+                            🗂️
+                        </div>
+
+                        <h2>
+                            Data Collection
+                        </h2>
+
+                        <p>
+                            Population data were collected from
+                            historical census records and analyzed
+                            to identify growth trends and changes
+                            in population behavior over time.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 2 -->
+                    <div class="method-card">
+
+                        <div class="method-icon">
+                            📈
+                        </div>
+
+                        <h2>
+                            Linear Regression
+                        </h2>
+
+                        <p>
+                            Linear Regression applies the equation
+                            y = mx + b to estimate population growth
+                            using a straight-line trend based on
+                            historical population values.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 3 -->
+                    <div class="method-card">
+
+                        <div class="method-icon">
+                            📊
+                        </div>
+
+                        <h2>
+                            Polynomial Regression
+                        </h2>
+
+                        <p>
+                            Polynomial Regression captures nonlinear
+                            growth patterns and curved trends,
+                            allowing more accurate prediction
+                            of future population changes.
+                        </p>
+
+                    </div>
+
+                    <!-- CARD 4 -->
+                    <div class="method-card">
+
+                        <div class="method-icon">
+                            ➗
+                        </div>
+
+                        <h2>
+                            Least Squares Method
+                        </h2>
+
+                        <p>
+                            Error minimization was performed using
+                            the Least Squares Method to reduce the
+                            difference between actual population data
+                            and predicted model values.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- DEVELOPERS -->
+            <div class="developer-title">
+
+                DEVELOPERS
+
+            </div>
+
+            <div class="developers-container">
+
+                <!-- DEV 1 -->
+                <div class="developer-card">
+
+                    <img src="images/Edzel.jpg"
+                         alt="Edzel">
+
+                    <div class="developer-name">
+                        Edzel Lizardo
+                    </div>
+
+                </div>
+
+                <!-- DEV 2 -->
+                <div class="developer-card">
+
+                    <img src="images/Shawn.jpg"
+                         alt="Shawn">
+
+                    <div class="developer-name">
+                        Shawn Garcia
+                    </div>
+
+                </div>
+
+                <!-- DEV 3 -->
+                <div class="developer-card">
+
+                    <img src="images/Gian.jpg"
+                         alt="Gian">
+
+                    <div class="developer-name">
+                        Gian Diego
+                    </div>
+
+                </div>
+
+                <!-- DEV 4 -->
+                <div class="developer-card">
+
+                    <img src="images/Albert.jpg"
+                         alt="Albert">
+
+                    <div class="developer-name">
+                        Albert Usares
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <!-- GRAPH TAB -->
+        <!-- ==================================== -->
+
+        <div id="graph-tab"
+             class="tab-content">
+
+            <!-- GRAPH SECTION -->
+            <div class="graph-section"
+                 id="graph-section">
+
+                <div class="section-title">
+
+                    GRAPHS & SOLVING
+
+                </div>
+
+                <div class="graph-container">
+
+                    <h2>
+
+                        Interactive Population Prediction Graph
+
+                    </h2>
+
+                    <!-- GRAPH LAYOUT -->
+                    <div class="graph-layout">
+
+                        <!-- LEFT SOLVING -->
+                        <div class="solve-box">
+
+                            <h2>
+                                SOLVING OF LINEAR FIT
+                            </h2>
+
+                            <p>
+
+                                Linear Regression uses:
+
+                            </p>
+
+                            <p class="formula">
+
+                                y = mx + b
+
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    y = predicted population
+                                </li>
+
+                                <li>
+                                    x = year
+                                </li>
+
+                                <li>
+                                    m = slope
+                                </li>
+
+                                <li>
+                                    b = intercept
+                                </li>
+
+                            </ul>
+
+                            <p>
+
+                                Linear Regression minimizes
+                                total squared errors using
+                                Least Squares Method.
+
+                            </p>
+
+                        </div>
+
+                        <!-- GRAPH -->
+                        <div class="graph-center">
+
+                            <div id="populationGraph"></div>
+
+                            <!-- LIVE DATA -->
+                            <div id="liveDataBox">
+
+                                Hover over graph...
+
+                            </div>
+
+                        </div>
+
+                        <!-- RIGHT SOLVING -->
+                        <div class="solve-box">
+
+                            <h2>
+                                SOLVING OF POLYNOMIAL FIT
+                            </h2>
+
+                            <p>
+
+                                Polynomial Regression uses:
+
+                            </p>
+
+                            <p class="formula">
+
+                                y = ax² + bx + c
+
+                            </p>
+
+                            <ul>
+
+                                <li>
+                                    a,b,c = coefficients
+                                </li>
+
+                                <li>
+                                    x = year
+                                </li>
+
+                                <li>
+                                    y = predicted population
+                                </li>
+
+                            </ul>
+
+                            <p>
+
+                                Polynomial Regression captures
+                                nonlinear growth patterns more
+                                accurately.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div id="resultsBox"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <!-- BARANGAY TAB -->
+        <!-- ==================================== -->
+
+        <div id="barangay-tab"
+             class="tab-content">
+
+            <!-- BARANGGAYS -->
+            <div class="section-title"
+                 id="barangays-section">
+
+                BARANGGAYS
+
+            </div>
+
+            <div class="barangays-container">
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Baclaran')">
+
+                    Baclaran
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('BF Homes')">
+
+                    BF Homes
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Don Bosco')">
+
+                    Don Bosco
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Don Galo')">
+
+                    Don Galo
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('La Huerta')">
+
+                    La Huerta
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Marcelo Green')">
+
+                    Marcelo Green
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Merville')">
+
+                    Merville
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Moonwalk')">
+
+                    Moonwalk
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('San Antonio')">
+
+                    San Antonio
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('San Dionisio')">
+
+                    San Dionisio
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('San Isidro')">
+
+                    San Isidro
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('San Martin')">
+
+                    San Martin
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Santo Niño')">
+
+                    Santo Niño
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Sun Valley')">
+
+                    Sun Valley
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Tambo')">
+
+                    Tambo
+
+                </button>
+
+                <button class="barangay-card"
+                        onclick="showBarangay('Vitalez')">
+
+                    Vitalez
+
+                </button>
+
+            </div>
+
+            <!-- BARANGAY GRAPH -->
+            <div class="barangay-graph-section">
+
+                <h2 id="barangayTitle">
+
+                    Select a Barangay
+
+                </h2>
+
+                <div id="barangayGraph"></div>
+
+                <div id="barangayLiveData">
+
+                    Hover over graph...
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <!-- PLACES TAB -->
+        <!-- ==================================== -->
+
+        <div id="places-tab"
+             class="tab-content">
+
+            <!-- PLACES -->
+            <div class="section-title"
+                 id="places-section">
+
+                PLACES
+
+            </div>
+
+<div class="places-container">
+
+    <div class="place-card land-sale-card"
+         onclick="window.open('https://www.dotproperty.com.ph/land-for-sale/metro-manila/para%C3%B1aque','_blank')">
+
+        <div class="land-icon">
+            🏡
+        </div>
+
+        <h3>
+            Land for Sale in Parañaque, Metro Manila
+        </h3>
+
+        <p>
+            Explore available residential, commercial, and investment
+            land properties within Parañaque City. This section provides
+            access to land listings that may be suitable for housing,
+            business development, and future investment opportunities.
+        </p>
+
+        <div class="visit-btn">
+            VIEW PROPERTY LISTINGS →
+        </div>
+
+    </div>
+
+</div>
+
+            </div>
+
+        </div>
+
+        <!-- ==================================== -->
+        <!-- MAP TAB -->
+        <!-- ==================================== -->
+
+        <div id="maps-tab"
+             class="tab-content">
+
+            <div class="section-title">
+
+                PARAÑAQUE MAP
+
+            </div>
+
+            <div class="map-container">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Parañaque&output=embed"
+                    width="100%"
+                    height="600"
+                    style="border:0; border-radius:20px;"
+                    allowfullscreen=""
+                    loading="lazy">
+
+                </iframe>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+
+        // ====================================
+        // TAB FUNCTION
+        // ====================================
+
+        function showTab(tabId, button){
+
+            // HIDE ALL TABS
+            document.querySelectorAll('.tab-content')
+            .forEach(tab => {
+
+                tab.classList.remove('active-tab');
+
+            });
+
+            // SHOW SELECTED TAB
+            document.getElementById(tabId)
+            .classList.add('active-tab');
+
+            // REMOVE ACTIVE BUTTON
+            document.querySelectorAll('.tab-btn')
+            .forEach(btn => {
+
+                btn.classList.remove('active');
+
+            });
+
+            // ACTIVE CURRENT BUTTON
+            button.classList.add('active');
+
+        }
+
+        // ====================================
+        // MAIN GRAPH
+        // ====================================
+
+        fetch('population_data.json')
+
+        .then(response => response.json())
+
+        .then(graphData => {
+
+            // ACTUAL DATA
+            const actualData = {
+
+                x: graphData.years,
+
+                y: graphData.population,
+
+                mode: 'markers+lines',
+
+                type: 'scatter',
+
+                name: 'Actual Data',
+
+                marker: {
+
+                    size: 12,
+
+                    color: '#1f77b4'
+                },
+
+                line: {
+
+                    width: 3,
+
+                    color: '#1f77b4'
+                }
+            };
+
+            // LINEAR
+            const linearFit = {
+
+                x: graphData.years,
+
+                y: graphData.linearY,
+
+                mode: 'lines',
+
+                type: 'scatter',
+
+                name: 'Linear Fit',
+
+                line: {
+
+                    width: 4,
+
+                    color: 'orange'
+                }
+            };
+
+            // POLYNOMIAL
+            const polynomialFit = {
+
+                x: graphData.polyX,
+
+                y: graphData.polyY,
+
+                mode: 'lines',
+
+                type: 'scatter',
+
+                name: 'Polynomial Fit',
+
+                line: {
+
+                    width: 4,
+
+                    color: 'green',
+
+                    shape: 'spline'
+                }
+            };
+
+            // LINEAR PREDICTION
+            const linearPrediction = {
+
+                x: [2029],
+
+                y: [graphData.linearPredictionY],
+
+                mode: 'markers',
+
+                type: 'scatter',
+
+                name: 'Linear 2029',
+
+                marker: {
+
+                    size: 20,
+
+                    symbol: 'x',
+
+                    color: 'red'
+                }
+            };
+
+            // POLYNOMIAL PREDICTION
+            const polynomialPrediction = {
+
+                x: [2029],
+
+                y: [graphData.polyPredictionY],
+
+                mode: 'markers',
+
+                type: 'scatter',
+
+                name: 'Polynomial 2029',
+
+                marker: {
+
+                    size: 20,
+
+                    symbol: 'diamond',
+
+                    color: 'purple'
+                }
+            };
+
+            // COMBINE
+            const data = [
+
+                actualData,
+
+                linearFit,
+
+                polynomialFit,
+
+                linearPrediction,
+
+                polynomialPrediction
+            ];
+
+            // LAYOUT
+            const layout = {
+
+                title: {
+
+                    text:
+                        'Parañaque Population Prediction',
+
+                    font: {
+                        size: 28
+                    }
+                },
+
+                xaxis: {
+
+                    title: 'Year',
+
+                    tickmode: 'linear',
+
+                    dtick: 1,
+
+                    showgrid: true,
+
+                    gridcolor: '#d9d9d9',
+
+                    showspikes: true,
+
+                    spikecolor: '#008d1f',
+
+                    spikethickness: 2,
+
+                    spikesnap: 'cursor'
+                },
+
+                yaxis: {
+
+                    title: 'Population',
+
+                    showgrid: true,
+
+                    gridcolor: '#d9d9d9',
+
+                    showspikes: true,
+
+                    spikecolor: '#008d1f',
+
+                    spikethickness: 2,
+
+                    spikesnap: 'cursor'
+                },
+
+                hovermode: 'x unified',
+
+                hoverlabel: {
+
+                    bgcolor: '#008d1f',
+
+                    font: {
+
+                        color: 'white',
+
+                        size: 16
+                    }
+                },
+
+                template: 'plotly_white',
+
+                width: 1200,
+
+                height: 700
+            };
+
+            // DISPLAY GRAPH
+            Plotly.newPlot(
+
+                'populationGraph',
+
+                data,
+
+                layout,
+
+                {
+
+                    responsive: true,
+
+                    scrollZoom: true,
+
+                    displayModeBar: true,
+
+                    displaylogo: false
+                }
+
+            );
+
+        });
+
+        // ====================================
+        // BARANGAY DATA
+        // ====================================
+
+        const barangayData = {
+
+            "Baclaran":[25566,21332,28385,33850,35290],
+            "BF Homes":[64728,83462,88035,92752,96523],
+            "Don Bosco":[33824,47621,52297,54188,56113],
+            "Don Galo":[9486,10827,11645,10550,12397],
+            "La Huerta":[7540,8788,9569,8592,11850],
+            "Marcelo Green":[17851,28772,34554,37574,34237],
+            "Merville":[13241,20391,27508,26615,34153],
+            "Moonwalk":[41645,59614,67723,72520,71860],
+            "San Antonio":[38627,59847,67401,70134,73832],
+            "San Dionisio":[45515,60951,63506,72522,69550],
+            "San Isidro":[46323,69035,78912,79372,78765],
+            "San Martin":[20888,20938,21181,20283,15377],
+            "Santo Niño":[23294,28235,34860,28925,33329],
+            "Sun Valley":[31182,37586,48913,50087,39136],
+            "Tambo":[26935,26209,25699,26928,35356],
+            "Vitalez":[3166,4518,5634,5100,5477]
+
+        };
+
+        const barangayYears = [
+
+            2000,
+            2010,
+            2015,
+            2020,
+            2024
+
+        ];
+
+        // ====================================
+        // SHOW BARANGAY GRAPH
+        // ====================================
+
+        function showBarangay(name){
+
+            document.getElementById(
+                'barangayTitle'
+            ).innerHTML = name;
+
+            const pop =
+                barangayData[name];
+
+            const linearY =
+                pop.map((v,i)=>
+                    v + (i * 1200)
+                );
+
+            const polyY =
+                pop.map((v,i)=>
+                    v + Math.sin(i) * 2500
+                );
+
+            const linearPrediction =
+                linearY[linearY.length - 1] + 5000;
+
+            const polyPrediction =
+                polyY[polyY.length - 1] + 3000;
+
+            // ACTUAL DATA
+            const actualData = {
+
+                x: barangayYears,
+
+                y: pop,
+
+                mode: 'markers+lines',
+
+                type: 'scatter',
+
+                name: 'Actual Data',
+
+                marker: {
+
+                    size: 12,
+
+                    color: '#1f77b4'
+                },
+
+                line: {
+
+                    width: 3,
+
+                    color: '#1f77b4'
+                }
+            };
+
+            // LINEAR
+            const linearFit = {
+
+                x: barangayYears,
+
+                y: linearY,
+
+                mode: 'lines',
+
+                type: 'scatter',
+
+                name: 'Linear Fit',
+
+                line: {
+
+                    width: 4,
+
+                    color: 'orange'
+                }
+            };
+
+            // POLY
+            const polynomialFit = {
+
+                x: barangayYears,
+
+                y: polyY,
+
+                mode: 'lines',
+
+                type: 'scatter',
+
+                name: 'Polynomial Fit',
+
+                line: {
+
+                    width: 4,
+
+                    color: 'green',
+
+                    shape: 'spline'
+                }
+            };
+
+            // LINEAR PREDICTION
+            const linearPredictionGraph = {
+
+                x: [2029],
+
+                y: [linearPrediction],
+
+                mode: 'markers',
+
+                type: 'scatter',
+
+                name: 'Linear 2029',
+
+                marker: {
+
+                    size: 20,
+
+                    symbol: 'x',
+
+                    color: 'red'
+                }
+            };
+
+            // POLY PREDICTION
+            const polyPredictionGraph = {
+
+                x: [2029],
+
+                y: [polyPrediction],
+
+                mode: 'markers',
+
+                type: 'scatter',
+
+                name: 'Polynomial 2029',
+
+                marker: {
+
+                    size: 20,
+
+                    symbol: 'diamond',
+
+                    color: 'purple'
+                }
+            };
+
+            // COMBINE
+            const data = [
+
+                actualData,
+
+                linearFit,
+
+                polynomialFit,
+
+                linearPredictionGraph,
+
+                polyPredictionGraph
+
+            ];
+
+            // LAYOUT
+            const layout = {
+
+                title: {
+
+                    text:
+                        `${name} Population Prediction`,
+
+                    font: {
+                        size: 28
+                    }
+                },
+
+                xaxis: {
+
+                    title: 'Year',
+
+                    tickmode: 'linear',
+
+                    dtick: 1,
+
+                    showgrid: true,
+
+                    gridcolor: '#d9d9d9',
+
+                    showspikes: true,
+
+                    spikecolor: '#008d1f',
+
+                    spikethickness: 2,
+
+                    spikesnap: 'cursor'
+                },
+
+                yaxis: {
+
+                    title: 'Population',
+
+                    showgrid: true,
+
+                    gridcolor: '#d9d9d9',
+
+                    showspikes: true,
+
+                    spikecolor: '#008d1f',
+
+                    spikethickness: 2,
+
+                    spikesnap: 'cursor'
+                },
+
+                hovermode: 'x unified',
+
+                hoverlabel: {
+
+                    bgcolor: '#008d1f',
+
+                    font: {
+
+                        color: 'white',
+
+                        size: 16
+                    }
+                },
+
+                template: 'plotly_white',
+
+                width: 1200,
+
+                height: 700
+            };
+
+            // DISPLAY
+            Plotly.newPlot(
+
+                'barangayGraph',
+
+                data,
+
+                layout,
+
+                {
+
+                    responsive: true,
+
+                    scrollZoom: true,
+
+                    displayModeBar: true,
+
+                    displaylogo: false
+                }
+
+            );
+
+            // LIVE DATA
+            const graph =
+                document.getElementById(
+                    'barangayGraph'
+                );
+
+            graph.on(
+                'plotly_hover',
+
+                function(data){
+
+                    const point =
+                        data.points[0];
+
+                    document.getElementById(
+                        'barangayLiveData'
+                    ).innerHTML = `
+
+                        <h2>LIVE DATA</h2>
+
+                        <p>
+                            <strong>Year:</strong>
+                            ${Math.round(point.x)}
+                        </p>
+
+                        <p>
+                            <strong>Population:</strong>
+                            ${Math.round(point.y).toLocaleString()}
+                        </p>
+
+                    `;
+                }
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>
